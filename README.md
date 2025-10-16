@@ -267,41 +267,49 @@ Mock mode will:
 
 **Full App Demo (30 seconds)**
 
-https://github.com/FractalQuandry/veo-social-app/assets/124735405/app-demo-full.mp4
+[docs/assets/demos/app-demo-full.mp4](docs/assets/demos/app-demo-full.mp4)
 
 **Quick Feature Overview (15 seconds)**
 
-https://github.com/FractalQuandry/veo-social-app/assets/124735405/app-demo-short.mp4
+[docs/assets/demos/app-demo-short.mp4](docs/assets/demos/app-demo-short.mp4)
 
 ### 🖼️ App Screenshots
 
 <table>
   <tr>
-    <td width="33%">
+    <td width="25%">
       <img src="docs/assets/screenshots/feed/feed-view-1.jpg" alt="Feed View" />
       <p align="center"><b>📱 Smart Feed</b><br/>AI-generated content in your personalized feed</p>
     </td>
-    <td width="33%">
+    <td width="25%">
       <img src="docs/assets/screenshots/feed/post-detail.jpg" alt="Post Detail" />
       <p align="center"><b>🎥 Post Detail</b><br/>View AI-generated videos and images</p>
     </td>
-    <td width="33%">
+    <td width="25%">
       <img src="docs/assets/screenshots/feed/profile-view.jpg" alt="Profile View" />
       <p align="center"><b>👤 Profile</b><br/>Your generated content and settings</p>
     </td>
-  </tr>
-  <tr>
-    <td width="33%">
+    <td width="25%">
       <img src="docs/assets/screenshots/composer/composer-1.jpg" alt="Composer View 1" />
       <p align="center"><b>✏️ Content Composer</b><br/>Create with text prompts and reference images</p>
     </td>
-    <td width="33%">
+  </tr>
+  <tr>
+    <td width="25%">
       <img src="docs/assets/screenshots/composer/composer-2.jpg" alt="Composer View 2" />
       <p align="center"><b>🎨 Generation Options</b><br/>Choose aspect ratio, include yourself, add references</p>
     </td>
-    <td width="33%">
+    <td width="25%">
       <img src="docs/assets/screenshots/settings/settings-1.jpg" alt="Settings View" />
       <p align="center"><b>⚙️ Settings</b><br/>Configure app behavior and preferences</p>
+    </td>
+    <td width="25%">
+      <img src="docs/assets/screenshots/settings/settings-2.jpg" alt="Advanced Settings" />
+      <p align="center"><b>⚙️ Advanced Settings</b><br/>Customize generation parameters</p>
+    </td>
+    <td width="25%">
+      <img src="docs/assets/screenshots/feed/onboarding.jpg" alt="Onboarding" />
+      <p align="center"><b>🎯 Onboarding</b><br/>Get started with the app</p>
     </td>
   </tr>
 </table>
@@ -310,21 +318,51 @@ https://github.com/FractalQuandry/veo-social-app/assets/124735405/app-demo-short
 
 <table>
   <tr>
-    <td width="25%"><img src="docs/assets/screenshots/feed/feed-view-3.jpg" alt="Feed 3" /><p align="center"><sub>Feed View</sub></p></td>
+    <td width="25%"><img src="docs/assets/screenshots/feed/feed-view-2.jpg" alt="Feed 2" /><p align="center"><sub>Feed Alternative View</sub></p></td>
+    <td width="25%"><img src="docs/assets/screenshots/feed/feed-view-3.jpg" alt="Feed 3" /><p align="center"><sub>Feed Explore Mode</sub></p></td>
     <td width="25%"><img src="docs/assets/screenshots/feed/feed-view-4.jpg" alt="Feed 4" /><p align="center"><sub>Content Browse</sub></p></td>
     <td width="25%"><img src="docs/assets/screenshots/feed/post-view-1.jpg" alt="Post 1" /><p align="center"><sub>Post Details</sub></p></td>
-    <td width="25%"><img src="docs/assets/screenshots/feed/post-view-2.jpg" alt="Post 2" /><p align="center"><sub>Image View</sub></p></td>
   </tr>
   <tr>
+    <td width="25%"><img src="docs/assets/screenshots/feed/post-view-2.jpg" alt="Post 2" /><p align="center"><sub>Image View</sub></p></td>
     <td width="25%"><img src="docs/assets/screenshots/feed/content-1.jpg" alt="Content 1" /><p align="center"><sub>Content Grid</sub></p></td>
     <td width="25%"><img src="docs/assets/screenshots/feed/content-2.jpg" alt="Content 2" /><p align="center"><sub>Generation</sub></p></td>
     <td width="25%"><img src="docs/assets/screenshots/feed/content-3.jpg" alt="Content 3" /><p align="center"><sub>Results</sub></p></td>
-    <td width="25%"><img src="docs/assets/screenshots/settings/settings-2.jpg" alt="Settings 2" /><p align="center"><sub>Advanced Settings</sub></p></td>
   </tr>
   <tr>
-    <td width="25%"><img src="docs/assets/screenshots/feed/onboarding.jpg" alt="Onboarding" /><p align="center"><sub>Onboarding</sub></p></td>
-    <td width="25%"></td>
-    <td width="25%"></td>
+    <td width="25%"><img src="docs/assets/screenshots/feed/photo_1_2025-10-16_21-30-07.jpg" alt="App Photo 1" /><p align="center"><sub>App Interface</sub></p></td>
+    <td width="25%"><img src="docs/assets/screenshots/feed/photo_2_2025-10-16_21-30-07.jpg" alt="App Photo 2" /><p align="center"><sub>User Interface</sub></p></td>
+    <td width="25%"><img src="docs/assets/screenshots/feed/photo_3_2025-10-16_21-30-07.jpg" alt="App Photo 3" /><p align="center"><sub>Content Creation</sub></p></td>
+    <td width="25%"><img src="docs/assets/screenshots/feed/photo_4_2025-10-16_21-30-07.jpg" alt="App Photo 4" /><p align="center"><sub>Video Generation</sub></p></td>
+  </tr>
+  <tr>
+    <td width="25%"><img src="docs/assets/screenshots/feed/photo_5_2025-10-16_21-30-07.jpg" alt="App Photo 5" /><p align="center"><sub>AI Features</sub></p></td>
+    <td width="25%"><img src="docs/assets/screenshots/feed/photo_6_2025-10-16_21-30-07.jpg" alt="App Photo 6" /><p align="center"><sub>Profile Setup</sub></p></td>
+    <td width="25%"><img src="docs/assets/screenshots/feed/photo_7_2025-10-16_21-30-07.jpg" alt="App Photo 7" /><p align="center"><sub>Content Feed</sub></p></td>
+    <td width="25%"><img src="docs/assets/screenshots/feed/photo_8_2025-10-16_21-30-07.jpg" alt="App Photo 8" /><p align="center"><sub>Generation Options</sub></p></td>
+  </tr>
+  <tr>
+    <td width="25%"><img src="docs/assets/screenshots/feed/photo_9_2025-10-16_21-30-07.jpg" alt="App Photo 9" /><p align="center"><sub>Media Gallery</sub></p></td>
+    <td width="25%"><img src="docs/assets/screenshots/feed/photo_10_2025-10-16_21-30-07.jpg" alt="App Photo 10" /><p align="center"><sub>Settings Menu</sub></p></td>
+    <td width="25%"><img src="docs/assets/screenshots/feed/photo_11_2025-10-16_21-30-07.jpg" alt="App Photo 11" /><p align="center"><sub>User Experience</sub></p></td>
+    <td width="25%"><img src="docs/assets/screenshots/feed/photo_12_2025-10-16_21-30-07.jpg" alt="App Photo 12" /><p align="center"><sub>App Navigation</sub></p></td>
+  </tr>
+  <tr>
+    <td width="25%"><img src="docs/assets/screenshots/feed/photo_13_2025-10-16_21-30-07.jpg" alt="App Photo 13" /><p align="center"><sub>Content Discovery</sub></p></td>
+    <td width="25%"><img src="docs/assets/screenshots/feed/photo_14_2025-10-16_21-30-07.jpg" alt="App Photo 14" /><p align="center"><sub>Social Features</sub></p></td>
+    <td width="25%"><img src="docs/assets/screenshots/feed/photo_15_2025-10-16_21-30-07.jpg" alt="App Photo 15" /><p align="center"><sub>Generation Process</sub></p></td>
+    <td width="25%"><img src="docs/assets/screenshots/feed/photo_16_2025-10-16_21-30-07.jpg" alt="App Photo 16" /><p align="center"><sub>Result Viewing</sub></p></td>
+  </tr>
+  <tr>
+    <td width="25%"><img src="docs/assets/screenshots/feed/photo_17_2025-10-16_21-30-07.jpg" alt="App Photo 17" /><p align="center"><sub>Advanced Features</sub></p></td>
+    <td width="25%"><img src="docs/assets/screenshots/settings/photo_18_2025-10-16_21-30-07.jpg" alt="Settings Photo 18" /><p align="center"><sub>Settings Screen</sub></p></td>
+    <td width="25%"><img src="docs/assets/screenshots/settings/photo_19_2025-10-16_21-30-07.jpg" alt="Settings Photo 19" /><p align="center"><sub>Configuration</sub></p></td>
+    <td width="25%"><img src="docs/assets/screenshots/settings/photo_20_2025-10-16_21-30-07.jpg" alt="Settings Photo 20" /><p align="center"><sub>Preferences</sub></p></td>
+  </tr>
+  <tr>
+    <td width="25%"><img src="docs/assets/screenshots/settings/photo_21_2025-10-16_21-30-07.jpg" alt="Settings Photo 21" /><p align="center"><sub>Advanced Options</sub></p></td>
+    <td width="25%"><img src="docs/assets/screenshots/settings/photo_22_2025-10-16_21-30-07.jpg" alt="Settings Photo 22" /><p align="center"><sub>User Settings</sub></p></td>
+    <td width="25%"><img src="docs/assets/screenshots/settings/photo_23_2025-10-16_21-30-07.jpg" alt="Settings Photo 23" /><p align="center"><sub>App Configuration</sub></p></td>
     <td width="25%"></td>
   </tr>
 </table>
