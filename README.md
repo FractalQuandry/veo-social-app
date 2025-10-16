@@ -405,14 +405,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📞 Support & Community
-
-- 🐛 **Issues**: [GitHub Issues](https://github.com/YOUR-USERNAME/veo-social-app/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/YOUR-USERNAME/veo-social-app/discussions)
-- 📧 **Email**: [YOUR-EMAIL]
-
----
-
 ## ⚖️ Responsible AI Use
 
 This project is designed for educational and experimental purposes. When deploying:
