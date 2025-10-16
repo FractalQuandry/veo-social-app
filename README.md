@@ -277,50 +277,100 @@ https://github.com/FractalQuandry/veo-social-app/assets/124735405/app-demo-full.
 
 https://github.com/FractalQuandry/veo-social-app/assets/124735405/app-demo-short.mp4
 
-</details>
 
-### 🖼️ App Screenshots
+
+---
+
+### 📱 App Gallery
+
+<div align="center">
+
+#### 🏠 Feed & Content Discovery
 
 <table>
   <tr>
-    <td width="33%">
-      <img src="docs/assets/screenshots/feed/feed-view-1.jpg" alt="Feed View" />
-      <p align="center"><b>📱 Smart Feed</b><br/>AI-generated content in your personalized feed</p>
-    </td>
-    <td width="33%">
-      <img src="docs/assets/screenshots/feed/post-detail.jpg" alt="Post Detail" />
-      <p align="center"><b>🎥 Post Detail</b><br/>View AI-generated videos and images</p>
-    </td>
-    <td width="33%">
-      <img src="docs/assets/screenshots/feed/profile-view.jpg" alt="Profile View" />
-      <p align="center"><b>👤 Profile</b><br/>Your generated content and settings</p>
-    </td>
+    <td><img src="docs/assets/screenshots/feed/feed-view-1.jpg" alt="Interest Feed" width="200"/></td>
+    <td><img src="docs/assets/screenshots/feed/feed-view-2.jpg" alt="Explore Feed" width="200"/></td>
+    <td><img src="docs/assets/screenshots/feed/feed-view-3.jpg" alt="Trending Feed" width="200"/></td>
+    <td><img src="docs/assets/screenshots/feed/feed-view-4.jpg" alt="Feed Scroll" width="200"/></td>
   </tr>
   <tr>
-    <td width="33%">
-      <img src="docs/assets/screenshots/composer/composer-1.jpg" alt="Composer View 1" />
-      <p align="center"><b>✏️ Content Composer</b><br/>Create with text prompts and reference images</p>
-    </td>
-    <td width="33%">
-      <img src="docs/assets/screenshots/composer/composer-2.jpg" alt="Composer View 2" />
-      <p align="center"><b>🎨 Generation Options</b><br/>Choose aspect ratio, include yourself, add references</p>
-    </td>
-    <td width="33%">
-      <img src="docs/assets/screenshots/settings/settings-1.jpg" alt="Settings View" />
-      <p align="center"><b>⚙️ Settings</b><br/>Configure app behavior and preferences</p>
-    </td>
+    <td align="center"><sub><b>Interest Feed</b><br/>Personalized content</sub></td>
+    <td align="center"><sub><b>Explore Feed</b><br/>Discover new content</sub></td>
+    <td align="center"><sub><b>Trending</b><br/>Popular posts</sub></td>
+    <td align="center"><sub><b>Feed View</b><br/>Scrollable feed</sub></td>
   </tr>
 </table>
 
-### ✨ Key Features Shown
+#### 🎬 Posts & Content Viewing
 
-- 🎭 **Profile Image Capture**: 3-view setup for personalized generation
-- 🎬 **AI Video Generation**: Veo 3.1 creating 8-second videos
-- 🖼️ **AI Image Generation**: Imagen 4.0 with multiple aspect ratios
-- 📸 **Reference Images**: Upload style/object references
-- 📊 **Smart Feed**: Interest-based, Explore, and Trending content
-- ⚡ **Real-time UI**: Smooth animations and transitions
+<table>
+  <tr>
+    <td><img src="docs/assets/screenshots/feed/post-detail.jpg" alt="Video Player" width="200"/></td>
+    <td><img src="docs/assets/screenshots/feed/post-view-1.jpg" alt="Post Details" width="200"/></td>
+    <td><img src="docs/assets/screenshots/feed/post-view-2.jpg" alt="Image View" width="200"/></td>
+    <td><img src="docs/assets/screenshots/feed/content-1.jpg" alt="Content Grid" width="200"/></td>
+  </tr>
+  <tr>
+    <td align="center"><sub><b>Video Player</b><br/>Full-screen viewing</sub></td>
+    <td align="center"><sub><b>Post Details</b><br/>Prompt & metadata</sub></td>
+    <td align="center"><sub><b>Image View</b><br/>AI-generated images</sub></td>
+    <td align="center"><sub><b>Content Grid</b><br/>Browse creations</sub></td>
+  </tr>
+</table>
 
+#### ✏️ Content Creation
+
+<table>
+  <tr>
+    <td><img src="docs/assets/screenshots/composer/composer-1.jpg" alt="Composer" width="200"/></td>
+    <td><img src="docs/assets/screenshots/composer/composer-2.jpg" alt="Options" width="200"/></td>
+    <td><img src="docs/assets/screenshots/feed/content-2.jpg" alt="Generation" width="200"/></td>
+    <td><img src="docs/assets/screenshots/feed/content-3.jpg" alt="Results" width="200"/></td>
+  </tr>
+  <tr>
+    <td align="center"><sub><b>Composer</b><br/>Write prompts</sub></td>
+    <td align="center"><sub><b>Options</b><br/>Include Me, references</sub></td>
+    <td align="center"><sub><b>Generation</b><br/>Real-time preview</sub></td>
+    <td align="center"><sub><b>Results</b><br/>Your creations</sub></td>
+  </tr>
+</table>
+
+#### ⚙️ Settings & Profile
+
+<table>
+  <tr>
+    <td><img src="docs/assets/screenshots/settings/settings-1.jpg" alt="Settings" width="200"/></td>
+    <td><img src="docs/assets/screenshots/settings/settings-2.jpg" alt="Advanced" width="200"/></td>
+    <td><img src="docs/assets/screenshots/feed/profile-view.jpg" alt="Profile" width="200"/></td>
+    <td><img src="docs/assets/screenshots/feed/onboarding.jpg" alt="Onboarding" width="200"/></td>
+  </tr>
+  <tr>
+    <td align="center"><sub><b>App Settings</b><br/>Preferences</sub></td>
+    <td align="center"><sub><b>Advanced</b><br/>Theme & options</sub></td>
+    <td align="center"><sub><b>Your Profile</b><br/>Content library</sub></td>
+    <td align="center"><sub><b>Onboarding</b><br/>Get started</sub></td>
+  </tr>
+</table>
+
+</div>
+
+---
+
+### ✨ Features Demonstrated
+
+| Feature | Description |
+|---------|-------------|
+| 🎭 **3-View Profile Capture** | Upload front + side profiles to create your AI avatar |
+| 🎬 **Veo 3.1 Video Generation** | 8-second AI-generated videos with 3 aspect ratios |
+| 🖼️ **Imagen 4.0 Images** | High-quality AI images in 1:1, 9:16, or 16:9 |
+| 📸 **Reference Images** | Upload up to 3 style/object references per post |
+| ☑️ **"Include Me" Feature** | Generate content featuring yourself |
+| 📊 **Smart Feed Algorithm** | 60% Interest, 25% Explore, 15% Trending |
+| ⚡ **Real-time Updates** | Firebase-powered live feed |
+| 🎨 **Beautiful UI** | Smooth animations and modern design |
+
+---
 ---
 
 ## 🤝 Contributing
