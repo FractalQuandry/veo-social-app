@@ -267,11 +267,13 @@ Mock mode will:
 
 **Full App Demo (30 seconds)**
 
-[docs/assets/demos/app-demo-full.mp4](docs/assets/demos/app-demo-full.mp4)
+<video src="https://github.com/FractalQuandry/veo-social-app/raw/main/docs/assets/demos/app-demo-full.mp4" controls="controls" style="max-width: 730px;">
+</video>
 
 **Quick Feature Overview (15 seconds)**
 
-[docs/assets/demos/app-demo-short.mp4](docs/assets/demos/app-demo-short.mp4)
+<video src="https://github.com/FractalQuandry/veo-social-app/raw/main/docs/assets/demos/app-demo-short.mp4" controls="controls" style="max-width: 730px;">
+</video>
 
 ### 🖼️ App Screenshots
 
