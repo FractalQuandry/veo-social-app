@@ -265,18 +265,9 @@ Mock mode will:
 
 ### 🎬 Video Demos
 
-<table>
-  <tr>
-    <td width="50%">
-      <b>App Demo Video 1</b><br/>
-      https://github.com/user-attachments/assets/a1b88694-9530-4172-9ff7-c7ef8983eae3
-    </td>
-    <td width="50%">
-      <b>App Demo Video 2</b><br/>
-      https://github.com/user-attachments/assets/4e9d4ee2-8e62-4fca-83de-316b074bebb7
-    </td>
-  </tr>
-</table>
+https://github.com/user-attachments/assets/a1b88694-9530-4172-9ff7-c7ef8983eae3
+
+https://github.com/user-attachments/assets/4e9d4ee2-8e62-4fca-83de-316b074bebb7
 
 ### 🖼️ App Screenshots
 
