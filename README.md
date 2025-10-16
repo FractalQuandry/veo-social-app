@@ -261,9 +261,65 @@ Mock mode will:
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots & Demo
 
-> 📝 TODO: Add screenshots
+### 🎬 Video Demos
+
+<details>
+<summary><b>📺 Watch Full App Demo (7MB, 30 seconds)</b></summary>
+
+https://github.com/FractalQuandry/veo-social-app/assets/124735405/app-demo-full.mp4
+
+</details>
+
+<details>
+<summary><b>� Quick Feature Overview (3.5MB, 15 seconds)</b></summary>
+
+https://github.com/FractalQuandry/veo-social-app/assets/124735405/app-demo-short.mp4
+
+</details>
+
+### 🖼️ App Screenshots
+
+<table>
+  <tr>
+    <td width="33%">
+      <img src="docs/assets/screenshots/feed/feed-view-1.jpg" alt="Feed View" />
+      <p align="center"><b>📱 Smart Feed</b><br/>AI-generated content in your personalized feed</p>
+    </td>
+    <td width="33%">
+      <img src="docs/assets/screenshots/feed/post-detail.jpg" alt="Post Detail" />
+      <p align="center"><b>🎥 Post Detail</b><br/>View AI-generated videos and images</p>
+    </td>
+    <td width="33%">
+      <img src="docs/assets/screenshots/feed/profile-view.jpg" alt="Profile View" />
+      <p align="center"><b>👤 Profile</b><br/>Your generated content and settings</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="33%">
+      <img src="docs/assets/screenshots/composer/composer-1.jpg" alt="Composer View 1" />
+      <p align="center"><b>✏️ Content Composer</b><br/>Create with text prompts and reference images</p>
+    </td>
+    <td width="33%">
+      <img src="docs/assets/screenshots/composer/composer-2.jpg" alt="Composer View 2" />
+      <p align="center"><b>🎨 Generation Options</b><br/>Choose aspect ratio, include yourself, add references</p>
+    </td>
+    <td width="33%">
+      <img src="docs/assets/screenshots/settings/settings-1.jpg" alt="Settings View" />
+      <p align="center"><b>⚙️ Settings</b><br/>Configure app behavior and preferences</p>
+    </td>
+  </tr>
+</table>
+
+### ✨ Key Features Shown
+
+- 🎭 **Profile Image Capture**: 3-view setup for personalized generation
+- 🎬 **AI Video Generation**: Veo 3.1 creating 8-second videos
+- 🖼️ **AI Image Generation**: Imagen 4.0 with multiple aspect ratios
+- 📸 **Reference Images**: Upload style/object references
+- 📊 **Smart Feed**: Interest-based, Explore, and Trending content
+- ⚡ **Real-time UI**: Smooth animations and transitions
 
 ---
 
