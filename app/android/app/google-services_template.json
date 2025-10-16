@@ -1,0 +1,48 @@
+{
+  "_comment": "This is a template file. DO NOT use this in production!",
+  "_instructions": [
+    "1. Create a Firebase project at https://console.firebase.google.com/",
+    "2. Add an Android app to your Firebase project",
+    "3. Download the real google-services.json file",
+    "4. Replace this file with the downloaded google-services.json",
+    "5. NEVER commit the real google-services.json to a public repository"
+  ],
+  "project_info": {
+    "project_number": "YOUR-PROJECT-NUMBER",
+    "firebase_url": "https://YOUR-PROJECT-ID.firebaseio.com",
+    "project_id": "YOUR-PROJECT-ID",
+    "storage_bucket": "YOUR-PROJECT-ID.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:YOUR-PROJECT-NUMBER:android:YOUR-APP-ID",
+        "android_client_info": {
+          "package_name": "com.example.yourapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "YOUR-CLIENT-ID.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "YOUR-ANDROID-API-KEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "YOUR-CLIENT-ID.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

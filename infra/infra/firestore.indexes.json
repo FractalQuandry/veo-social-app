@@ -1,0 +1,19 @@
+
+{
+  "indexes": [
+    {"collectionGroup": "posts", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath": "createdAt", "order": "DESCENDING"},
+      {"fieldPath": "status", "order": "ASCENDING"}
+    ]},
+    {"collectionGroup": "posts", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath": "status", "order": "ASCENDING"},
+      {"fieldPath": "isPrivate", "order": "ASCENDING"},
+      {"fieldPath": "createdAt", "order": "DESCENDING"}
+    ]},
+    {"collectionGroup": "feeds", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath": "uid", "order": "ASCENDING"},
+      {"fieldPath": "score", "order": "DESCENDING"}
+    ]}
+  ],
+  "fieldOverrides": []
+}

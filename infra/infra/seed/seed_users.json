@@ -1,0 +1,18 @@
+[
+  {
+    "uid": "demo-user-1",
+    "displayName": "Demo Dreamer",
+    "photoUrl": "https://i.pravatar.cc/150?img=12",
+    "anon": false,
+    "interests": ["street food", "synthwave", "travel"],
+    "sessionBudget": {"images": 3, "videos": 1}
+  },
+  {
+    "uid": "demo-user-2",
+    "displayName": "Curious Creator",
+    "photoUrl": "https://i.pravatar.cc/150?img=32",
+    "anon": true,
+    "interests": ["cozy", "fantasy", "slow living"],
+    "sessionBudget": {"images": 4, "videos": 1}
+  }
+]

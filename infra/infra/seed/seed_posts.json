@@ -1,0 +1,12 @@
+[
+  {
+    "type": "image",
+    "prompt": "cozy reading nook, rainy window, warm lamp",
+    "url": "https://picsum.photos/800/1200"
+  },
+  {
+    "type": "video",
+    "prompt": "neon street noodles slow dolly 6s",
+    "url": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4"
+  }
+]
