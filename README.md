@@ -26,32 +26,106 @@
 
 ## ✨ Features
 
-- 🎥 **Real-time AI Video Generation** using Google's Veo 3.1
+### 🎭 Personalized AI Generation
+
+**The Magic: Your AI Avatar**
+
+Upload 3 profile views (front, left profile, right profile) and the app creates a personalized AI model of YOU. Then:
+
+- ✨ **Generate videos with yourself in them** - "Me skateboarding through cyberpunk Tokyo"
+- ✨ **Create images featuring you** - "Me as a superhero in space"
+- ✨ **Your likeness is stored in your profile** - One-time setup, use everywhere
+- ✨ **Privacy-first** - Your profile images are your data, always under your control
+
+The app automatically passes your profile views to Veo/Imagen when you enable "Include Me" in the composer.
+
+### 🎨 Content Creation
+
+- 🎥 **AI Video Generation** using Google's Veo 3.1 (up to 8 seconds)
 - 🖼️ **AI Image Generation** using Imagen 4.0
-- 👤 **Personalized Generation** with "Include Me" feature (up to 3 reference images)
-- 📱 **Multiple Aspect Ratios** (1:1, 9:16, 16:9)
+- � **Reference Images** - Upload up to 3 additional reference images per post (separate from profile)
+  - Use for style references, objects, or scenes you want in the generation
+  - Example: Upload a photo of your dog, then generate "my dog surfing in Hawaii"
+- 📱 **Multiple Aspect Ratios** (1:1 square, 9:16 vertical, 16:9 horizontal)
 - 🔒 **Private/Public Content** control
-- 📊 **Smart Feed Algorithms**:
-  - Interest Feed (60%): Content based on your interactions
-  - Explore Feed (25%): Trending and diverse content
-  - Trending Feed (15%): Popular content across the platform
+
+### 📱 Social Features
+
+- 📊 **Smart Feed Algorithm**:
+  - **Interest Feed (60%)**: Content based on your interactions and preferences
+  - **Explore Feed (25%)**: Trending and diverse content discovery
+  - **Trending Feed (15%)**: Popular content across the platform
 - ⚡ **Real-time Updates** with Firebase
-- 🎨 **Beautiful UI** with smooth animations
+- 🎨 **Beautiful UI** with smooth animations and transitions
 - 🔐 **Authentication** (mock local auth + Firebase Auth ready)
-- 📈 **Usage Limits** to control costs
+- 📈 **Usage Limits** to control costs (configurable free tier)
 
 ---
 
-## 🏗️ Architecture
+## � How It Works: The "Include Me" Feature
 
 ```
-┌─────────────────────────────────────────────────────────────┐
+1. Setup Your Profile (One-Time)
+   ┌─────────────────────────────────────────┐
+   │  📸 Capture 3 Profile Views             │
+   │                                          │
+   │  1️⃣ Front-facing view                   │
+   │  2️⃣ Left profile (45°)                  │
+   │  3️⃣ Right profile (45°)                 │
+   │                                          │
+   │  ✅ Stored in your profile               │
+   └─────────────────────────────────────────┘
+                    │
+                    ▼
+2. Create Content
+   ┌─────────────────────────────────────────┐
+   │  ✏️ Write your prompt                    │
+   │  "Me riding a dragon over a volcano"    │
+   │                                          │
+   │  ☑️ Check "Include Me"                  │
+   │                                          │
+   │  🎬 Generate →                           │
+   └─────────────────────────────────────────┘
+                    │
+                    ▼
+3. AI Magic Happens
+   ┌─────────────────────────────────────────┐
+   │  Backend automatically:                  │
+   │  • Loads your 3 profile images           │
+   │  • Sends to Veo 3.1 / Imagen 4.0        │
+   │  • Includes subject_reference_images     │
+   │                                          │
+   │  🤖 AI generates YOU in the scene        │
+   └─────────────────────────────────────────┘
+                    │
+                    ▼
+4. Result
+   ┌─────────────────────────────────────────┐
+   │  🎉 Video/Image with YOU in it!          │
+   │                                          │
+   │  • Your likeness preserved               │
+   │  • Natural integration into scene        │
+   │  • Shareable on your feed                │
+   └─────────────────────────────────────────┘
+```
+
+**Profile Images vs Reference Images:**
+
+- **Profile Images** (3 views): Your AI avatar, stored in your profile, used when "Include Me" is enabled
+- **Reference Images** (optional, up to 3 per post): Style/object/scene references for individual generations
+
+---
+
+## 🗺️ Architecture
+
+```
+┌────────────────────────────────────────────────────────┐
 │                      Flutter App (Dart)                     │
-│  ┌──────────────┬──────────────┬──────────────────────┐    │
+│  ┌──────────────┬──────────────┬────────────────────┐    │
 │  │   Composer   │   Feed View  │   Profile & Settings │    │
-│  └──────────────┴──────────────┴──────────────────────┘    │
-└────────────────────────┬────────────────────────────────────┘
-                         │ REST API
+│  └──────────────┴──────────────┴────────────────────┘    │
+└────────────────────────────────┬───────────────────────┘
+                                 │ REST API
                          ▼
 ┌─────────────────────────────────────────────────────────────┐
 │                FastAPI Backend (Python)                     │
