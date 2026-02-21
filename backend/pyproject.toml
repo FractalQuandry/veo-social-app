@@ -12,7 +12,7 @@ dependencies = [
     "google-cloud-firestore==2.16.0",
     "google-cloud-storage==2.16.0",
     "google-cloud-pubsub==2.21.1",
-    "google-cloud-aiplatform==1.64.0",
+    "google-cloud-aiplatform==1.133.0",
     "respx==0.21.1",
     "Pillow>=10.0.0"
 ]
