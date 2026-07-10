@@ -41,7 +41,7 @@ The fastest way to try the app without any API setup:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/veo-social-app.git
+git clone https://github.com/FractalQuandry/veo-social-app.git
 cd veo-social-app
 ```
 
@@ -425,8 +425,7 @@ In the Flutter app:
 
 ## Getting Help
 
-- **Issues**: [GitHub Issues](https://github.com/YOUR-USERNAME/veo-social-app/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/YOUR-USERNAME/veo-social-app/discussions)
+- **Issues**: [GitHub Issues](https://github.com/FractalQuandry/veo-social-app/issues)
 - **Documentation**: Check other docs in the `docs/` directory
 
 ---

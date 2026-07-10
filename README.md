@@ -4,8 +4,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Flutter](https://img.shields.io/badge/Flutter-3.x-blue.svg)](https://flutter.dev)
-[![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://python.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.109+-green.svg)](https://fastapi.tiangolo.com)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.111-green.svg)](https://fastapi.tiangolo.com)
 
 ---
 
@@ -43,7 +43,7 @@ The app automatically passes your profile views to Veo/Imagen when you enable "I
 
 - 🎥 **AI Video Generation** using Google's Veo 3.1 (up to 8 seconds)
 - 🖼️ **AI Image Generation** using Imagen 4.0
-- � **Reference Images** - Upload up to 3 additional reference images per post (separate from profile)
+- 📎 **Reference Images** - Upload up to 3 additional reference images per post (separate from profile)
   - Use for style references, objects, or scenes you want in the generation
   - Example: Upload a photo of your dog, then generate "my dog surfing in Hawaii"
 - 📱 **Multiple Aspect Ratios** (1:1 square, 9:16 vertical, 16:9 horizontal)
@@ -62,7 +62,7 @@ The app automatically passes your profile views to Veo/Imagen when you enable "I
 
 ---
 
-## � How It Works: The "Include Me" Feature
+## 🪄 How It Works: The "Include Me" Feature
 
 ```
 1. Setup Your Profile (One-Time)
@@ -144,19 +144,32 @@ The app automatically passes your profile views to Veo/Imagen when you enable "I
 
 ---
 
+## 📁 Project Structure
+
+```text
+veo-social-app/
+├── app/          # Flutter app (feed, composer, profile) — see app/README.md
+├── backend/      # FastAPI backend (generation, feed, storage) — see backend/README.md
+├── docs/         # Setup, architecture, costs, API reference
+├── infra/        # Firestore/Storage rules, indexes, Cloud Run script, seed data
+└── firebase.json # Firebase project configuration
+```
+
+---
+
 ## 🚀 Quick Start
 
 ### Prerequisites
 
 - **Flutter SDK** 3.x or higher
-- **Python** 3.11 or higher
+- **Python** 3.10 or higher
 - **Google Cloud Platform** account (for production)
 - **Firebase** project (free tier available)
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/veo-social-app.git
+git clone https://github.com/FractalQuandry/veo-social-app.git
 cd veo-social-app
 ```
 
@@ -174,11 +187,14 @@ python -m venv .venv
 # macOS/Linux:
 source .venv/bin/activate
 
-# Install dependencies
-pip install -r requirements.txt
+# Install dependencies (from pyproject.toml)
+pip install -e .
 
 # Copy environment template
+# Windows:
 copy .env.example .env
+# macOS/Linux:
+cp .env.example .env
 
 # Edit .env and ensure ENABLE_MOCKS=true for free testing
 
@@ -188,13 +204,23 @@ uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
 
 Backend will be available at `http://localhost:8000`
 
+To run the backend tests:
+
+```bash
+pip install -e ".[test]"
+pytest
+```
+
 ### 3. Flutter App Setup
 
 ```bash
 cd app
 
 # Copy environment template
+# Windows:
 copy .env.example .env
+# macOS/Linux:
+cp .env.example .env
 
 # Edit .env and set API_BASE_URL=http://localhost:8000
 
@@ -246,18 +272,19 @@ Mock mode will:
 
 ### Backend
 
-- **Python 3.11+** - Programming language
+- **Python 3.10+** - Programming language
 - **FastAPI** - Modern async web framework
 - **Vertex AI SDK** - Google's AI models
-- **Firebase Admin SDK** - Backend services
+- **Google Cloud client libraries** - Firestore, Storage, Pub/Sub
 
 ### Infrastructure
 
 - **Google Cloud Platform**:
-  - Vertex AI (Veo 3.1, Imagen 4.0, Gemini)
+  - Vertex AI (Veo 3.1, Imagen 4.0)
   - Cloud Firestore (NoSQL database)
   - Firebase Storage (Media storage)
-- **Optional**: Cloud Run for deployment
+  - Pub/Sub (optional async generation worker)
+- **Optional**: Cloud Run for deployment (`backend/Dockerfile` + `infra/infra/cloudrun.sh`)
 
 ---
 
@@ -398,7 +425,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- **Google Cloud** for providing Vertex AI APIs (Veo 3.1, Imagen 4.0, Gemini)
+- **Google Cloud** for providing Vertex AI APIs (Veo 3.1, Imagen 4.0)
 - **Flutter Team** for the amazing framework
 - **FastAPI** for the excellent Python framework
 - **Firebase** for backend infrastructure

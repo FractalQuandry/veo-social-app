@@ -101,7 +101,7 @@ We classify vulnerabilities using the following severity levels:
 
    ```bash
    # Backend
-   pip install --upgrade -r requirements.txt
+   pip install --upgrade -e .
    
    # Frontend
    flutter pub upgrade

@@ -16,7 +16,8 @@ backend/
 │   │   └── storage.py       # Firebase Storage operations
 │   └── tests/               # Unit tests
 ├── .env.example             # Environment template
-├── requirements.txt         # Python dependencies
+├── pyproject.toml           # Python dependencies
+├── Dockerfile               # Container image for Cloud Run
 └── README.md               # This file
 ```
 
@@ -33,8 +34,8 @@ python -m venv .venv
 # Activate (Windows)
 .venv\Scripts\activate
 
-# Install dependencies
-pip install -r requirements.txt
+# Install dependencies (from pyproject.toml)
+pip install -e .
 
 # Configure environment
 copy .env.example .env
