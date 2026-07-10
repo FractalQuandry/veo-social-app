@@ -19,8 +19,8 @@ dependencies = [
 
 [project.optional-dependencies]
 test = [
-    "pytest==8.3.2",
-    "pytest-asyncio==0.23.7",
+    "pytest==9.0.3",
+    "pytest-asyncio==1.4.0",
     "pytest-mock==3.14.0",
     "anyio==4.4.0"
 ]
