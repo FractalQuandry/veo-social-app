@@ -76,7 +76,7 @@ class ProfilePage extends ConsumerWidget {
               Text(
                 user?.uid ?? 'No user ID',
                 style: theme.textTheme.bodyMedium?.copyWith(
-                  color: colorScheme.onSurface.withOpacity(0.6),
+                  color: colorScheme.onSurface.withValues(alpha: 0.6),
                   fontFamily: 'monospace',
                 ),
                 textAlign: TextAlign.center,
@@ -244,7 +244,7 @@ class _InfoRow extends StatelessWidget {
             label,
             style: TextStyle(
               fontSize: 16,
-              color: colorScheme.onSurface.withOpacity(0.8),
+              color: colorScheme.onSurface.withValues(alpha: 0.8),
             ),
           ),
         ),

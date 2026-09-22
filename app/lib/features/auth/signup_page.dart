@@ -127,7 +127,7 @@ class _SignupPageState extends ConsumerState<SignupPage>
                     Text(
                       'Discover authentic, AI-generated content that adapts to your true interests—not what brands want you to see.',
                       style: theme.textTheme.bodyLarge?.copyWith(
-                        color: colorScheme.onSurface.withOpacity(0.7),
+                        color: colorScheme.onSurface.withValues(alpha: 0.7),
                         height: 1.5,
                       ),
                       textAlign: TextAlign.center,
@@ -236,7 +236,7 @@ class _SignupPageState extends ConsumerState<SignupPage>
                       child: Text(
                         'Maybe later',
                         style: TextStyle(
-                          color: colorScheme.onSurface.withOpacity(0.6),
+                          color: colorScheme.onSurface.withValues(alpha: 0.6),
                         ),
                       ),
                     ),
@@ -246,7 +246,7 @@ class _SignupPageState extends ConsumerState<SignupPage>
                     Text(
                       'By creating an account, you agree to our Terms of Service and Privacy Policy',
                       style: theme.textTheme.bodySmall?.copyWith(
-                        color: colorScheme.onSurface.withOpacity(0.5),
+                        color: colorScheme.onSurface.withValues(alpha: 0.5),
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -309,7 +309,7 @@ class _FeatureItem extends StatelessWidget {
                 description,
                 style: TextStyle(
                   fontSize: 14,
-                  color: colorScheme.onSurface.withOpacity(0.7),
+                  color: colorScheme.onSurface.withValues(alpha: 0.7),
                 ),
               ),
             ],
@@ -383,8 +383,8 @@ class _AnimatedPhoneIllustrationState extends State<_AnimatedPhoneIllustration>
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                     colors: [
-                      colorScheme.primaryContainer.withOpacity(0.2),
-                      colorScheme.secondaryContainer.withOpacity(0.2),
+                      colorScheme.primaryContainer.withValues(alpha: 0.2),
+                      colorScheme.secondaryContainer.withValues(alpha: 0.2),
                     ],
                   ),
                   borderRadius: BorderRadius.circular(32),
@@ -421,12 +421,12 @@ class _PhoneFrame extends StatelessWidget {
             color: colorScheme.surface,
             borderRadius: BorderRadius.circular(24),
             border: Border.all(
-              color: colorScheme.outline.withOpacity(0.3),
+              color: colorScheme.outline.withValues(alpha: 0.3),
               width: 3,
             ),
             boxShadow: [
               BoxShadow(
-                color: colorScheme.primary.withOpacity(0.1),
+                color: colorScheme.primary.withValues(alpha: 0.1),
                 blurRadius: 20,
                 offset: const Offset(0, 10),
               ),
@@ -476,7 +476,7 @@ class _PhoneFrame extends StatelessWidget {
                                 child: Container(
                                   height: 8,
                                   decoration: BoxDecoration(
-                                    color: colorScheme.primary.withOpacity(0.2),
+                                    color: colorScheme.primary.withValues(alpha: 0.2),
                                     borderRadius: BorderRadius.circular(4),
                                   ),
                                 ),
@@ -489,7 +489,7 @@ class _PhoneFrame extends StatelessWidget {
                             height: 6,
                             width: double.infinity,
                             decoration: BoxDecoration(
-                              color: colorScheme.onSurface.withOpacity(0.1),
+                              color: colorScheme.onSurface.withValues(alpha: 0.1),
                               borderRadius: BorderRadius.circular(3),
                             ),
                           ),
@@ -498,7 +498,7 @@ class _PhoneFrame extends StatelessWidget {
                             height: 6,
                             width: double.infinity,
                             decoration: BoxDecoration(
-                              color: colorScheme.onSurface.withOpacity(0.1),
+                              color: colorScheme.onSurface.withValues(alpha: 0.1),
                               borderRadius: BorderRadius.circular(3),
                             ),
                           ),
@@ -507,7 +507,7 @@ class _PhoneFrame extends StatelessWidget {
                             height: 6,
                             width: 120,
                             decoration: BoxDecoration(
-                              color: colorScheme.onSurface.withOpacity(0.1),
+                              color: colorScheme.onSurface.withValues(alpha: 0.1),
                               borderRadius: BorderRadius.circular(3),
                             ),
                           ),
@@ -530,7 +530,7 @@ class _PhoneFrame extends StatelessWidget {
                                 child: Icon(
                                   Icons.image_outlined,
                                   size: 40,
-                                  color: colorScheme.primary.withOpacity(0.6),
+                                  color: colorScheme.primary.withValues(alpha: 0.6),
                                 ),
                               ),
                             ),
@@ -582,7 +582,7 @@ class _MiniActionButton extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(6),
       decoration: BoxDecoration(
-        color: colorScheme.primaryContainer.withOpacity(0.5),
+        color: colorScheme.primaryContainer.withValues(alpha: 0.5),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Icon(

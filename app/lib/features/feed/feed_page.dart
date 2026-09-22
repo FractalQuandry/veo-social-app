@@ -476,7 +476,7 @@ class _ReadyContent extends ConsumerWidget {
               if (duration != null && post.type == PostType.video)
                 _TagBadge(
                   label: '${duration.toStringAsFixed(1)}s',
-                  color: theme.colorScheme.primary.withOpacity(0.5),
+                  color: theme.colorScheme.primary.withValues(alpha: 0.5),
                 ),
             ],
           ),
@@ -624,7 +624,7 @@ class _FallbackContent extends ConsumerWidget {
               const SizedBox(height: 8),
               _TagBadge(
                 label: 'DISCOVER',
-                color: theme.colorScheme.primary.withOpacity(0.5),
+                color: theme.colorScheme.primary.withValues(alpha: 0.5),
               ),
             ],
           ),
@@ -769,7 +769,7 @@ class _TagBadge extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.85),
+        color: color.withValues(alpha: 0.85),
         borderRadius: BorderRadius.circular(14),
       ),
       child: Text(
@@ -805,7 +805,7 @@ class _SocialAction extends ConsumerWidget {
         children: [
           CircleAvatar(
             radius: 24,
-            backgroundColor: theme.colorScheme.primary.withOpacity(0.2),
+            backgroundColor: theme.colorScheme.primary.withValues(alpha: 0.2),
             child: Icon(icon, color: theme.colorScheme.primary, size: 26),
           ),
           const SizedBox(height: 6),
@@ -1020,7 +1020,7 @@ class _OfflineNotice extends StatelessWidget {
         hosts.map((url) => Uri.tryParse(url)?.host ?? url).join(', ');
     return DecoratedBox(
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.10),
+        color: Colors.white.withValues(alpha: 0.10),
         borderRadius: BorderRadius.circular(18),
         border: Border.all(color: Colors.white24),
       ),
@@ -1096,7 +1096,7 @@ class _SignInPromptSheet extends StatelessWidget {
               height: 4,
               margin: const EdgeInsets.only(bottom: 20),
               decoration: BoxDecoration(
-                color: theme.colorScheme.onSurfaceVariant.withOpacity(0.4),
+                color: theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.4),
                 borderRadius: BorderRadius.circular(2),
               ),
             ),

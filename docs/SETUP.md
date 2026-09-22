@@ -11,7 +11,7 @@ This guide will help you set up and run the Veo Social App locally. The app can 
 
 ### Required Software
 
-- **Flutter SDK** 3.3.0 or higher
+- **Flutter SDK** 3.41.0 or higher (Dart 3.11.0 or higher)
   - [Install Flutter](https://docs.flutter.dev/get-started/install)
   - Run `flutter doctor` to verify installation
 

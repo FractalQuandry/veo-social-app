@@ -88,7 +88,7 @@ class _OnboardingFlowState extends ConsumerState<OnboardingFlow> {
         Text(
           'An AI-powered social experience\ntailored just for you',
           style: theme.textTheme.bodyLarge?.copyWith(
-            color: theme.colorScheme.onSurface.withOpacity(0.7),
+            color: theme.colorScheme.onSurface.withValues(alpha: 0.7),
           ),
           textAlign: TextAlign.center,
         ),
@@ -128,7 +128,7 @@ class _OnboardingFlowState extends ConsumerState<OnboardingFlow> {
         Text(
           'Choose topics to personalize your feed',
           style: theme.textTheme.bodyMedium?.copyWith(
-            color: theme.colorScheme.onSurface.withOpacity(0.7),
+            color: theme.colorScheme.onSurface.withValues(alpha: 0.7),
           ),
         ),
         const SizedBox(height: 24),

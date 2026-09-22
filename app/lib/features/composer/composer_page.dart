@@ -20,14 +20,14 @@ class ComposerPage extends ConsumerStatefulWidget {
 class _ComposerPageState extends ConsumerState<ComposerPage> {
   final _controller = TextEditingController();
   final _imagePicker = ImagePicker();
-  bool _submitting = false;
+  final bool _submitting = false;
   String _mediaType = 'image'; // 'image' or 'video'
   String _aspectRatio = '9:16'; // '9:16' (portrait) or '16:9' (landscape)
   int _duration = 6; // Video duration: 4, 6, or 8 seconds
   bool _generateAudio = true; // Generate audio for video
   bool _isPrivate = false; // Privacy setting
   bool _includeMe = false; // Include user's profile image in generation
-  List<XFile> _referenceImages = []; // Custom reference images (up to 3)
+  final List<XFile> _referenceImages = []; // Custom reference images (up to 3)
 
   @override
   void dispose() {
@@ -172,7 +172,7 @@ class _ComposerPageState extends ConsumerState<ComposerPage> {
 
     // All new content goes to Your Feed (private feed type)
     // It will show both public and private content from this user
-    final targetFeed = FeedType.private; // Your Feed
+    const targetFeed = FeedType.private; // Your Feed
 
     // Add optimistic pending item to Your Feed BEFORE navigating back
     ref
@@ -468,7 +468,7 @@ class _ComposerPageState extends ConsumerState<ComposerPage> {
                           }
                         });
                       },
-                      activeColor: Colors.blue,
+                      activeThumbColor: Colors.blue,
                     ),
                   ],
                 ),
@@ -481,10 +481,10 @@ class _ComposerPageState extends ConsumerState<ComposerPage> {
                   child: Container(
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
-                      color: Colors.amber.shade900.withOpacity(0.2),
+                      color: Colors.amber.shade900.withValues(alpha: 0.2),
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
-                        color: Colors.amber.shade700.withOpacity(0.5),
+                        color: Colors.amber.shade700.withValues(alpha: 0.5),
                       ),
                     ),
                     child: Row(
@@ -590,7 +590,7 @@ class _ComposerPageState extends ConsumerState<ComposerPage> {
                                   onTap: () => _removeReferenceImage(index),
                                   child: Container(
                                     padding: const EdgeInsets.all(4),
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Colors.black87,
                                       shape: BoxShape.circle,
                                     ),
@@ -658,7 +658,7 @@ class _ComposerPageState extends ConsumerState<ComposerPage> {
                     Switch(
                       value: _isPrivate,
                       onChanged: (value) => setState(() => _isPrivate = value),
-                      activeColor: Colors.orange,
+                      activeThumbColor: Colors.orange,
                     ),
                   ],
                 ),

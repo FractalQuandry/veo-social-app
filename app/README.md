@@ -27,6 +27,9 @@ app/
 
 ## Setup
 
+Use Flutter 3.41 or newer with Dart 3.11 or newer. The current dependency
+lockfile and source cleanup were verified with Flutter 3.47 / Dart 3.13.
+
 See [Setup Guide](../docs/SETUP.md) for detailed instructions.
 
 ### Quick Start

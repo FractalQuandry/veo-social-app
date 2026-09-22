@@ -128,7 +128,7 @@ class _EmailSignupPageState extends ConsumerState<EmailSignupPage> {
                 Text(
                   'Create your account to start discovering authentic content',
                   style: theme.textTheme.bodyLarge?.copyWith(
-                    color: colorScheme.onSurface.withOpacity(0.7),
+                    color: colorScheme.onSurface.withValues(alpha: 0.7),
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -251,7 +251,7 @@ class _EmailSignupPageState extends ConsumerState<EmailSignupPage> {
                 Text(
                   'By creating an account, you agree to our Terms of Service and Privacy Policy',
                   style: theme.textTheme.bodySmall?.copyWith(
-                    color: colorScheme.onSurface.withOpacity(0.5),
+                    color: colorScheme.onSurface.withValues(alpha: 0.5),
                   ),
                   textAlign: TextAlign.center,
                 ),

@@ -357,7 +357,7 @@ class SettingsPage extends ConsumerWidget {
                               .watch(feedDisplayPreferencesProvider)
                               .getStyle(feedType);
                           return DropdownButtonFormField<FeedDisplayStyle>(
-                            value: currentStyle,
+                            initialValue: currentStyle,
                             isExpanded: true,
                             decoration: const InputDecoration(
                               border: OutlineInputBorder(),
@@ -407,7 +407,7 @@ class SettingsPage extends ConsumerWidget {
                     ],
                   ),
                 );
-              }).toList(),
+              }),
             ],
           ),
         ),

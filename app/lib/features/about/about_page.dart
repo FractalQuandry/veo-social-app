@@ -49,7 +49,7 @@ class AboutPage extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                      color: colorScheme.surface.withOpacity(0.9),
+                      color: colorScheme.surface.withValues(alpha: 0.9),
                       shape: BoxShape.circle,
                     ),
                     child: Icon(
@@ -71,7 +71,7 @@ class AboutPage extends StatelessWidget {
                   Text(
                     'Your Stories. Your Way.',
                     style: theme.textTheme.titleMedium?.copyWith(
-                      color: colorScheme.onPrimaryContainer.withOpacity(0.8),
+                      color: colorScheme.onPrimaryContainer.withValues(alpha: 0.8),
                       fontWeight: FontWeight.w600,
                     ),
                   ),
@@ -96,7 +96,7 @@ class AboutPage extends StatelessWidget {
                     'We believe in authentic content discovery. MyWay is an AI-native platform that puts you in control of your content experience—not advertisers, not corporations, but you.',
                     style: theme.textTheme.bodyLarge?.copyWith(
                       height: 1.6,
-                      color: colorScheme.onSurface.withOpacity(0.8),
+                      color: colorScheme.onSurface.withValues(alpha: 0.8),
                     ),
                   ),
                   const SizedBox(height: 32),
@@ -112,7 +112,7 @@ class AboutPage extends StatelessWidget {
                     'Traditional social media platforms use algorithms designed to maximize engagement and ad revenue—not your happiness or genuine interests. They track your every move, exploit your psychology, and feed you content that keeps you scrolling, not living.',
                     style: theme.textTheme.bodyLarge?.copyWith(
                       height: 1.6,
-                      color: colorScheme.onSurface.withOpacity(0.8),
+                      color: colorScheme.onSurface.withValues(alpha: 0.8),
                     ),
                   ),
                   const SizedBox(height: 32),
@@ -128,7 +128,7 @@ class AboutPage extends StatelessWidget {
                     'MyWay uses ethical AI to generate personalized content based on your true interests. No hidden algorithms, no dark patterns, no manipulation. Just pure, authentic content discovery powered by cutting-edge AI that adapts to what you genuinely care about.',
                     style: theme.textTheme.bodyLarge?.copyWith(
                       height: 1.6,
-                      color: colorScheme.onSurface.withOpacity(0.8),
+                      color: colorScheme.onSurface.withValues(alpha: 0.8),
                     ),
                   ),
                   const SizedBox(height: 32),
@@ -177,13 +177,13 @@ class AboutPage extends StatelessWidget {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                         colors: [
-                          colorScheme.primaryContainer.withOpacity(0.5),
-                          colorScheme.secondaryContainer.withOpacity(0.5),
+                          colorScheme.primaryContainer.withValues(alpha: 0.5),
+                          colorScheme.secondaryContainer.withValues(alpha: 0.5),
                         ],
                       ),
                       borderRadius: BorderRadius.circular(16),
                       border: Border.all(
-                        color: colorScheme.outline.withOpacity(0.2),
+                        color: colorScheme.outline.withValues(alpha: 0.2),
                       ),
                     ),
                     child: Column(
@@ -205,7 +205,7 @@ class AboutPage extends StatelessWidget {
                         Text(
                           'Visit our website to explore our vision, meet the team, and join the revolution.',
                           style: theme.textTheme.bodyMedium?.copyWith(
-                            color: colorScheme.onSurface.withOpacity(0.7),
+                            color: colorScheme.onSurface.withValues(alpha: 0.7),
                           ),
                           textAlign: TextAlign.center,
                         ),
@@ -233,14 +233,14 @@ class AboutPage extends StatelessWidget {
                         Text(
                           'Version 1.0.0',
                           style: theme.textTheme.bodySmall?.copyWith(
-                            color: colorScheme.onSurface.withOpacity(0.5),
+                            color: colorScheme.onSurface.withValues(alpha: 0.5),
                           ),
                         ),
                         const SizedBox(height: 4),
                         Text(
                           '© 2025 MyWay. All rights reserved.',
                           style: theme.textTheme.bodySmall?.copyWith(
-                            color: colorScheme.onSurface.withOpacity(0.5),
+                            color: colorScheme.onSurface.withValues(alpha: 0.5),
                           ),
                         ),
                       ],
@@ -306,7 +306,7 @@ class _ValueItem extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
-            color: colorScheme.primaryContainer.withOpacity(0.5),
+            color: colorScheme.primaryContainer.withValues(alpha: 0.5),
             borderRadius: BorderRadius.circular(8),
           ),
           child: Icon(
@@ -333,7 +333,7 @@ class _ValueItem extends StatelessWidget {
                 description,
                 style: TextStyle(
                   fontSize: 14,
-                  color: colorScheme.onSurface.withOpacity(0.7),
+                  color: colorScheme.onSurface.withValues(alpha: 0.7),
                 ),
               ),
             ],

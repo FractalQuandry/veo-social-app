@@ -272,7 +272,7 @@ class _ProfileImageCapturePageState
                         : 'Generating your digital twin...\nThis may take a minute.',
                     textAlign: TextAlign.center,
                     style: theme.textTheme.bodyMedium?.copyWith(
-                      color: colorScheme.onSurface.withOpacity(0.7),
+                      color: colorScheme.onSurface.withValues(alpha: 0.7),
                     ),
                   ),
                 ],
@@ -302,7 +302,7 @@ class _ProfileImageCapturePageState
           Text(
             'This image will be used as your profile picture and can be inserted into generated content.',
             style: theme.textTheme.bodyMedium?.copyWith(
-              color: colorScheme.onSurface.withOpacity(0.7),
+              color: colorScheme.onSurface.withValues(alpha: 0.7),
             ),
             textAlign: TextAlign.center,
           ),
@@ -389,7 +389,7 @@ class _ProfileImageCapturePageState
         height: 120,
         decoration: BoxDecoration(
           color: captured
-              ? colorScheme.primaryContainer.withOpacity(0.3)
+              ? colorScheme.primaryContainer.withValues(alpha: 0.3)
               : colorScheme.surfaceContainerHighest,
           border: Border.all(
             color: captured ? colorScheme.primary : colorScheme.outline,

@@ -74,7 +74,7 @@ final feedControllerProvider =
 // Pagination state provider
 final feedPaginationProvider =
     StateProvider.family<FeedPaginationState, FeedType>((ref, feedType) {
-  return FeedPaginationState(hasMore: true, nextPage: 0, isLoadingMore: false);
+  return const FeedPaginationState(hasMore: true, nextPage: 0, isLoadingMore: false);
 });
 
 class FeedPaginationState {

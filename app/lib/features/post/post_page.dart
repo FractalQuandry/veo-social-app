@@ -282,7 +282,7 @@ class _PostPageState extends ConsumerState<PostPage> {
                 if (!_videoController!.value.isPlaying)
                   Container(
                     padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.black45,
                       shape: BoxShape.circle,
                     ),
@@ -335,7 +335,7 @@ class _PostPageState extends ConsumerState<PostPage> {
         ),
       );
     } else {
-      return Center(
+      return const Center(
         child: Icon(
           Icons.image_not_supported,
           size: 64,
@@ -534,7 +534,7 @@ class _PostPageState extends ConsumerState<PostPage> {
                     duration: const Duration(milliseconds: 200),
                     child: Container(
                       padding: const EdgeInsets.all(16),
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.black45,
                         shape: BoxShape.circle,
                       ),
@@ -648,7 +648,7 @@ class _SignInPromptSheet extends StatelessWidget {
                   height: 4,
                   margin: const EdgeInsets.only(bottom: 24),
                   decoration: BoxDecoration(
-                    color: colorScheme.onSurfaceVariant.withOpacity(0.4),
+                    color: colorScheme.onSurfaceVariant.withValues(alpha: 0.4),
                     borderRadius: BorderRadius.circular(2),
                   ),
                 ),
@@ -693,7 +693,7 @@ class _SignInPromptSheet extends StatelessWidget {
                   _getActionDescription(),
                   textAlign: TextAlign.center,
                   style: theme.textTheme.bodyLarge?.copyWith(
-                    color: colorScheme.onSurface.withOpacity(0.7),
+                    color: colorScheme.onSurface.withValues(alpha: 0.7),
                     height: 1.5,
                   ),
                 ),
@@ -805,7 +805,7 @@ class _SignInPromptSheet extends StatelessWidget {
                   child: Text(
                     'Maybe Later',
                     style: TextStyle(
-                      color: colorScheme.onSurface.withOpacity(0.6),
+                      color: colorScheme.onSurface.withValues(alpha: 0.6),
                     ),
                   ),
                 ),
@@ -836,7 +836,7 @@ class _BenefitChip extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
-            color: colorScheme.primaryContainer.withOpacity(0.5),
+            color: colorScheme.primaryContainer.withValues(alpha: 0.5),
             borderRadius: BorderRadius.circular(12),
           ),
           child: Icon(
@@ -850,7 +850,7 @@ class _BenefitChip extends StatelessWidget {
           label,
           style: TextStyle(
             fontSize: 12,
-            color: colorScheme.onSurface.withOpacity(0.7),
+            color: colorScheme.onSurface.withValues(alpha: 0.7),
           ),
         ),
       ],
