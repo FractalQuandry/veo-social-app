@@ -71,7 +71,17 @@ def generate_title_from_prompt(prompt: str, max_length: int = 50) -> str:
     
     # Remove common system prompt additions we might have added
     clean = re.sub(r'^(Create an engaging.*?scene:|Create a stunning.*?visual:)\s*', '', clean, flags=re.IGNORECASE)
-    clean = re.sub(r',\s*(high quality|vibrant|eye-catching|dramatic|cinematic).*$', '', clean, flags=re.IGNORECASE)
+    # Find the suffix marker without repeatedly matching the rest of the prompt.
+    # Preserve the old non-DOTALL behavior: modifiers before the last newline stay.
+    last_newline = clean.rfind("\n")
+    for modifier in re.finditer(
+        r",\s*(?:high quality|vibrant|eye-catching|dramatic|cinematic)",
+        clean,
+        flags=re.IGNORECASE,
+    ):
+        if modifier.end() > last_newline:
+            clean = clean[:modifier.start()]
+            break
     
     # Capitalize first letter
     if clean:

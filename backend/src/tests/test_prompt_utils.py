@@ -1,6 +1,15 @@
 """Tests for prompt enhancement and title generation utilities."""
+
+import subprocess
+import sys
+from pathlib import Path
+
 import pytest
-from src.services.prompt_utils import enhance_prompt_for_social, generate_title_from_prompt
+
+from src.services.prompt_utils import (
+    enhance_prompt_for_social,
+    generate_title_from_prompt,
+)
 
 
 def test_enhance_prompt_for_image():
@@ -83,3 +92,49 @@ def test_generate_title_max_length():
     assert len(title) <= 30
     # Should end with ellipsis
     assert title.endswith("...")
+
+
+@pytest.mark.parametrize(
+    ("prompt", "expected"),
+    [
+        ("sunset, high quality, vibrant, eye-catching", "Sunset"),
+        ("sunset, vibrant colors", "Sunset"),
+        ("sunset, eye-catching detail", "Sunset"),
+        ("sunset, dramatic lighting", "Sunset"),
+        ("sunset, CINEMATICALLY lit", "Sunset"),
+        ("sunset, HIGH QUALİTY!", "Sunset"),
+        ("sunset, cınematıc shot", "Sunset"),
+        ("sunset, dramatic\nnew subject", "Sunset, dramatic\nnew subject"),
+        ("sunset, vibrant\nclouds, cinematic light", "Sunset, vibrant\nclouds"),
+        ("sunset,\n\tHIGH QUALITY!", "Sunset"),
+        ("sunset, dramatic\rnew subject", "Sunset"),
+        ("sunset, dramatic\u2028new subject", "Sunset"),
+        ("sunset, blue sky", "Sunset, blue sky"),
+        (
+            "Create a stunning, shareable visual: sunset, high quality",
+            "Sunset",
+        ),
+    ],
+)
+def test_generate_title_preserves_modifier_handling(prompt, expected):
+    assert generate_title_from_prompt(prompt, max_length=200) == expected
+
+
+@pytest.mark.parametrize("modifier", ["vibrant", "cinematic"])
+def test_generate_title_handles_repeated_modifiers_before_newline(modifier):
+    # The old end-anchored regex rescans the whole suffix at every comma.
+    # Run in a subprocess so a regression fails without hanging the test suite.
+    script = (
+        "from src.services.prompt_utils import generate_title_from_prompt\n"
+        f"prompt = 'sunset' + ',{modifier}' * 100_000 + '\\nX'\n"
+        "title = generate_title_from_prompt(prompt, max_length=len(prompt))\n"
+        "assert title == prompt[0].upper() + prompt[1:]\n"
+    )
+    subprocess.run(
+        [sys.executable, "-c", script],
+        cwd=Path(__file__).resolve().parents[2],
+        capture_output=True,
+        text=True,
+        timeout=5,
+        check=True,
+    )
